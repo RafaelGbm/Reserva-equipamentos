@@ -1,4 +1,4 @@
-﻿package com.fiap.reserva_equipamentos.api.controller;
+package com.fiap.reserva_equipamentos.api.controller;
 
 import com.fiap.reserva_equipamentos.api.domain.Equipamento;
 import com.fiap.reserva_equipamentos.api.service.EquipamentoService;

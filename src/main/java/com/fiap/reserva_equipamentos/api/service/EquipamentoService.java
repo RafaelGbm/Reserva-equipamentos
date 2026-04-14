@@ -32,13 +32,10 @@ public class EquipamentoService {
         });
     }
 
-    /**
-     * Exclusao logica (soft delete): mantem o registro e marca como inativo.
-     */
+    
     public boolean excluir(Long id) {
         return repo.findById(id).map(existing -> {
-            existing.setAtivo(false);
-            repo.save(existing);
+            repo.delete(existing);
             return true;
         }).orElse(false);
     }
